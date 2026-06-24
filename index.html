@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BABU M - Information Technology Student, Full Stack Developer, Java Developer, Python Developer Portfolio"
+    />
+    <meta
+      name="keywords"
+      content="BABU M, Information Technology, Full Stack Developer, Java Developer, Python Developer, React, Flask, Portfolio"
+    />
+    <meta name="author" content="BABU M" />
+    <title>BABU M | IT Student Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="loader" id="loader">
+      <div class="loader-ring"></div>
+      <p>Loading Portfolio...</p>
+    </div>
+
+    <div class="page-shell">
+      <header class="header" id="header">
+        <nav class="nav container">
+          <a href="#home" class="logo">BABU<span>.</span></a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#achievements" class="nav-link">Achievements</a></li>
+            <li><a href="#certifications" class="nav-link">Certifications</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero section" id="home">
+          <div class="section-bg" aria-hidden="true">
+            <span class="blob blob-1"></span>
+            <span class="blob blob-2"></span>
+            <span class="blob blob-3"></span>
+            <div class="section-particles"></div>
+          </div>
+          <div class="container hero-grid">
+            <div class="hero-content" id="heroContent">
+              <p class="eyebrow">Welcome to my portfolio</p>
+              <h1 class="hero-title">BABU M</h1>
+              <h2>
+                I am <span class="typing-text" id="typingText"></span>
+              </h2>
+              <div class="hero-badges">
+                <span class="hero-badge"><i class="fab fa-java"></i>Java</span>
+                <span class="hero-badge"><i class="fab fa-react"></i>React</span>
+                <span class="hero-badge"><i class="fab fa-python"></i>Python</span>
+                <span class="hero-badge"><i class="fas fa-database"></i>MongoDB</span>
+              </div>
+              <p class="hero-tagline">
+                Information Technology Student | Full Stack Developer | Aspiring Software Engineer
+              </p>
+              <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="assets/resume/resume.pdf" class="btn btn-secondary" download
+                  >Download Resume</a
+                >
+              </div>
+              <div class="socials">
+                <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="mailto:babumani9342@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+              </div>
+            </div>
+            <div class="hero-showcase code-card glass" id="heroShowcase" aria-hidden="true">
+              <div class="code-card-header">
+                <span class="code-dot dot-red"></span>
+                <span class="code-dot dot-yellow"></span>
+                <span class="code-dot dot-green"></span>
+                <span class="code-card-title">babu.js</span>
+              </div>
+              <div class="code-card-body">
+                <p><span class="code-key">const</span> <span class="code-var">developer</span> = {</p>
+                <p class="code-line"><span class="code-prop">name</span>: <span class="code-string">"Babu M"</span>,</p>
+                <p class="code-line"><span class="code-prop">role</span>: <span class="code-string">"Full Stack Developer"</span>,</p>
+                <p class="code-line"><span class="code-prop">stack</span>: [<span class="code-string">"Java"</span>, <span class="code-string">"React"</span>, <span class="code-string">"Flask"</span>],</p>
+                <p class="code-line"><span class="code-prop">passion</span>: <span class="code-string">"Building cool things"</span>,</p>
+                <p class="code-line"><span class="code-prop">available</span>: <span class="code-bool">true</span></p>
+                <p>}<span class="code-cursor">|</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-cue" aria-hidden="true">
+            <span class="scroll-cue-mouse"><span class="scroll-cue-dot"></span></span>
+            <p>Scroll</p>
+          </div>
+        </section>
+
+        <section class="about section" id="about">
+          <div class="section-bg" aria-hidden="true">
+            <span class="blob blob-1"></span>
+            <span class="blob blob-2"></span>
+            <span class="blob blob-3"></span>
+            <div class="section-particles"></div>
+          </div>
+          <div class="container">
+            <div class="section-head reveal">
+              <p class="eyebrow">About Me</p>
+              <h3>Professional Summary & Career Objective</h3>
+            </div>
+            <div class="about-grid">
+              <article class="glass reveal reveal-left">
+                <p>
+                  I am an Information Technology student passionate about software development and modern web technologies. I have a strong interest in Full Stack Development and enjoy building web applications using Java, Python, React, Flask, and MongoDB.
+                </p>
+                <p>
+                  To obtain a challenging position in the software industry where I can apply my technical knowledge, enhance my development skills, and contribute to innovative projects while continuously learning new technologies.
+                </p>
+              </article>
+              <div class="stats-grid">
+                <article class="stat-card glass reveal">
+                  <h4 data-counter="5">0</h4>
+                  <p>Projects Completed</p>
+                </article>
+                <article class="stat-card glass reveal">
+                  <h4 data-counter="11">0</h4>
+                  <p>Technologies Known</p>
+                </article>
+                <article class="stat-card glass reveal">
+                  <h4 data-counter="5">0</h4>
+                  <p>Hackathons Participated</p>
+                </article>
+                <article class="stat-card glass reveal">
+                  <h4 data-counter="9">0</h4>
+                  <p data-toggle="CGPA: 9.35">Academic Excellence</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="skills section" id="skills">
+          <div class="section-bg" aria-hidden="true">
+            <span class="blob blob-1"></span>
+            <span class="blob blob-2"></span>
+            <span class="blob blob-3"></span>
+            <div class="section-particles"></div>
+          </div>
+          <div class="container">
+            <div class="section-head reveal">
+              <p class="eyebrow">Skills</p>
+              <h3>Technical Expertise</h3>
+            </div>
+            <div class="skills-grid">
+              <article class="glass skill-card reveal reveal-scale">
+                <h4>Frontend Development</h4>
+                <ul>
+                  <li><span>HTML5</span><div class="progress"><i data-progress="95%"></i></div></li>
+                  <li><span>CSS3</span><div class="progress"><i data-progress="92%"></i></div></li>
+                  <li><span>JavaScript</span><div class="progress"><i data-progress="90%"></i></div></li>
+                  <li><span>React.js</span><div class="progress"><i data-progress="87%"></i></div></li>
+                  <li><span>Bootstrap</span><div class="progress"><i data-progress="84%"></i></div></li>
+                  <li><span>Responsive Web Design</span><div class="progress"><i data-progress="93%"></i></div></li>
+                </ul>
+              </article>
+              <article class="glass skill-card reveal reveal-scale">
+                <h4>Backend Development</h4>
+                <ul>
+                  <li><span>Python</span><div class="progress"><i data-progress="96%"></i></div></li>
+                  <li><span>Flask</span><div class="progress"><i data-progress="88%"></i></div></li>
+                  <li><span>FastAPI</span><div class="progress"><i data-progress="87%"></i></div></li>
+                  <li><span>Springboot</span><div class="progress"><i data-progress="87%"></i></div></li>
+                  <li><span>Java</span><div class="progress"><i data-progress="80%"></i></div></li>
+                  <li><span>REST APIs</span><div class="progress"><i data-progress="90%"></i></div></li>
+                </ul>
+              </article>
+              <article class="glass skill-card reveal reveal-scale">
+                <h4>Database</h4>
+                <ul>
+                  <li><span>MySQL</span><div class="progress"><i data-progress="89%"></i></div></li>
+                  <li><span>SQLite</span><div class="progress"><i data-progress="86%"></i></div></li>
+                  <li><span>Mongo DB</span><div class="progress"><i data-progress="89%"></i></div></li>
+                </ul>
+              </article>
+              <article class="glass skill-card reveal reveal-scale">
+                <h4>Tools & Technologies</h4>
+                <ul>
+                  <li><span>Git & GitHub</span><div class="progress"><i data-progress="92%"></i></div></li>
+                  <li><span>VS Code</span><div class="progress"><i data-progress="93%"></i></div></li>
+                  <li><span>Postman</span><div class="progress"><i data-progress="86%"></i></div></li>
+                </ul>
+              </article>
+              
+            </div>
+          </div>
+        </section>
+
+        <section class="projects section" id="projects">
+          <div class="section-bg" aria-hidden="true">
+            <span class="blob blob-1"></span>
+            <span class="blob blob-2"></span>
+            <span class="blob blob-3"></span>
+            <div class="section-particles"></div>
+          </div>
+          <div class="container">
+            <div class="section-head reveal">
+              <p class="eyebrow">Projects</p>
+              <h3>Featured Work</h3>
+            </div>
+            <div class="projects-grid">
+              <article class="project-card glass reveal reveal-left">
+                <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=1000&q=80" alt="Agri Waste to Wealth" />
+                <div class="project-content">
+                  <h4>Agri Waste to Wealth</h4>
+                  <p>
+                    Built a Node.js-based web application to collect agricultural waste from farmers and convert it into usable organic products. Implemented backend functionality and data management using JavaScript. Promoted sustainable agriculture and waste-to-wealth solutions.
+                  </p>
+                  <p class="tech">Node.js • JavaScript • Database Management</p>
+                  <div class="project-links">
+                    <a href="https://github.com/babu9342" target="_blank" rel="noopener">GitHub</a>
+                    <a href="#" target="_blank" rel="noopener">Learn More</a>
+                  </div>
+                </div>
+              </article>
+              <article class="project-card glass reveal reveal-right">
+                <img src="https://images.unsplash.com/photo-1555963966-b7ae5404b6ed?auto=format&fit=crop&w=1000&q=80" alt="Underground Cable Fault Prediction" />
+                <div class="project-content">
+                  <h4>Underground Cable Fault Prediction</h4>
+                  <p>
+                    Built an ESP32-based IoT system with current, temperature, vibration, and voltage sensors to monitor underground cable health in real-time using Isolation Forest AI. Developed a Flask web dashboard for live sensor visualization and engineered a hardware alert mechanism.
+                  </p>
+                  <p class="tech">ESP32 • IoT • Flask • Python • Isolation Forest AI</p>
+                  <div class="project-links">
+                    <a href="https://github.com/babu9342" target="_blank" rel="noopener">GitHub</a>
+                    <a href="#" target="_blank" rel="noopener">Live Demo</a>
+                  </div>
+                </div>
+              </article>
+              <article class="project-card glass reveal reveal-left">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=80" alt="More Projects Coming" />
+                <div class="project-content">
+                  <h4>Local Sports Tournament Management System</h4>
+                  <p>
+                    Building a comprehensive platform for managing local sports tournaments with organizer advertisement posting, time-windowed team registration, fixtures, and real-time standings. Designed with a sophisticated UI resembling event platforms like Unstop.
+                  </p>
+                  <p class="tech">Python • Flask • SQLite • Tkinter • React</p>
+                  <div class="project-links">
+                    <a href="https://github.com/babu9342" target="_blank" rel="noopener">GitHub</a>
+                    <a href="#" target="_blank" rel="noopener">In Progress</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="education section" id="education">
+          <div class="section-bg" aria-hidden="true">
+            <span class="blob blob-1"></span>
+            <span class="blob blob-2"></span>
+            <span class="blob blob-3"></span>
+            <div class="section-particles"></div>
+          </div>
+          <div class="container">
+            <div class="section-head reveal">
+              <p class="eyebrow">Education</p>
+              <h3>Academic Journey</h3>
+            </div>
+            <div class="timeline">
+              <article class="timeline-item glass reveal reveal-left">
+                <h4>Bachelor of Technology in Information Technology</h4>
+                <p class="meta">Shree Venkateshwara Hi-Tech Engineering College</p>
+                <p class="meta">2023 - 2027 | CGPA: 9.35</p>
+                <p>
+                  III Year Student | Relevant Coursework: Data Structures & Algorithms, Database
+                  Management Systems, Operating Systems, Computer Networks,
+                  Software Engineering, Artificial Intelligence.
+                </p>
+              </article>
+              <article class="timeline-item glass reveal reveal-left">
+                <h4>Higher Secondary Education (HSC)</h4>
+                <p class="meta">Government Higher Secondary School Kannipatty</p>
+                <p class="meta">2020 - 2022 | Score: 80.01%</p>
+                <p>
+                  Strong academic foundation in Mathematics and Science.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="achievements section" id="achievements">
+          <div class="section-bg" aria-hidden="true">
+            <span class="blob blob-1"></span>
+            <span class="blob blob-2"></span>
+            <span class="blob blob-3"></span>
+            <div class="section-particles"></div>
+          </div>
+          <div class="container">
+            <div class="section-head reveal">
+              <p class="eyebrow">Achievements</p>
+              <h3>Milestones & Recognition</h3>
+            </div>
+            <div class="achievement-grid">
+              <article class="glass reveal reveal-scale"><i class="fas fa-code"></i><p>Built Node.js and Python-based Full-Stack Web Applications.</p></article>
+              <article class="glass reveal reveal-scale"><i class="fas fa-robot"></i><p>Developed IoT systems with AI-powered anomaly detection.</p></article>
+              <article class="glass reveal reveal-scale"><i class="fas fa-plug"></i><p>Experienced in ESP32, Flask, and real-time sensor data visualization.</p></article>
+              <article class="glass reveal reveal-scale"><i class="fas fa-seedling"></i><p>Passionate about sustainable solutions and agricultural technology.</p></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="certifications section" id="certifications">
+          <div class="section-bg" aria-hidden="true">
+            <span class="blob blob-1"></span>
+            <span class="blob blob-2"></span>
+            <span class="blob blob-3"></span>
+            <div class="section-particles"></div>
+          </div>
+          <div class="container">
+            <div class="section-head reveal">
+              <p class="eyebrow">Certifications</p>
+              <h3>Verified Learning</h3>
+            </div>
+            <div class="cert-grid">
+              <article class="glass cert-card reveal reveal-scale">
+                <h4>Shritek Innovation Hackathon</h4>
+                <p>Healthcare and Assistance for Patients with Medical Officers</p>
+                <p>Developed an innovative technical solution in a hackathon environment.</p>
+              </article>
+              <article class="glass cert-card reveal reveal-scale">
+                <h4>7-Day Cybersecurity Seminar</h4>
+                <p>Certified Participant & Best Performance Award</p>
+                <p>Anna University (2025) - Intensive cybersecurity training and concepts.</p>
+              </article>
+              <article class="glass cert-card reveal reveal-scale">
+                <h4>24-Hour National Level Hackathon</h4>
+                <p>Participated on October 29th, 2024</p>
+                <p>Real-world problem solving and rapid development experience.</p>
+              </article>
+              <article class="glass cert-card reveal reveal-scale">
+                <h4>Agri Waste to Wealth Hackathon</h4>
+                <p>Velammal College - Team Project</p>
+                <p>Innovative sustainable agriculture and waste management solution.</p>
+              </article>
+              <article class="glass cert-card reveal reveal-scale">
+                <h4>DSCET Hackathon Participation</h4>
+                <p>Dhanalakshmi Srinivasan College of Engineering and Technology</p>
+                <p>Team collaboration on innovative technical solution development.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact section" id="contact">
+          <div class="section-bg" aria-hidden="true">
+            <span class="blob blob-1"></span>
+            <span class="blob blob-2"></span>
+            <span class="blob blob-3"></span>
+            <div class="section-particles"></div>
+          </div>
+          <div class="container">
+            <div class="section-head reveal">
+              <p class="eyebrow">Contact</p>
+              <h3>Let's Build Something Great</h3>
+            </div>
+            <div class="contact-grid">
+              <form class="contact-form glass reveal reveal-left">
+                <input type="text" placeholder="Name" required />
+                <input type="email" placeholder="Email" required />
+                <input type="text" placeholder="Subject" required />
+                <textarea rows="6" placeholder="Message" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+              <aside class="contact-info glass reveal reveal-right">
+                <p><i class="fas fa-envelope"></i> babumani9342@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +91 9342788299</p>
+                <p><i class="fas fa-location-dot"></i> Erode, Tamil Nadu, India</p>
+                <p><i class="fab fa-github"></i> github.com/babu9342</p>
+                <p><i class="fab fa-linkedin"></i> linkedin.com/in/babu-m-b9072b317</p>
+              </aside>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer reveal">
+        <div class="container footer-grid">
+          <div>
+            <h4>BABU M</h4>
+            <p>Information Technology Student | Full Stack Developer | Java Developer</p>
+          </div>
+          <ul class="quick-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="footer-socials">
+            <a href="https://github.com/" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:babumani9342@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <p class="copyright">© 2026 BABU M. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
